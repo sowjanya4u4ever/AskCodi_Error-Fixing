@@ -2,35 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>UNT Health Center</title>
     <style>
+        body {
+            background-color: #add8e6; /* Blue and white background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #000; /* Set default text color */
+        }
+        
         header {
             background-color: #00BFFF; /* Light blue header */
-            color: #fff; /* Set header text color to white for better contrast */
+            color: #fff;
             padding: 10px;
             text-align: center;
         }
+        
+        footer {
+            background-color: #00BFFF; /* Light blue footer */
+            color: #fff;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #00BFFF; /* Light blue heading */
+        }
+        
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #000; /* Set input text color */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
 
         nav a {
-            color: #fff; /* Set navigation link color to white for better contrast */
+            color: #fff; /* Set navigation link color */
             margin: 0 10px; /* Add margin to the navigation links */
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Website</h1>
+        <h1>UNT Health Center</h1>
+        <nav>
+            <a href="#doctors">Doctors</a>
+            <a href="#departments">Departments</a>
+            <a href="#contact">Contact</a>
+            <a href="#signin">Sign In</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#">Doctors</a>
-        <a href="#">Departments</a>
-        <a href="#">Contact</a>
-        <a href="#">Sign In</a>
-    </nav>
-    <div>
-        <!-- Your content goes here -->
+    <div class="container">
+        <h2>Doctors</h2>
+        <p>Doctor 1: Dr. Joseph Livingston (Cardiologist)</p>
+        <p>Doctor 2: Dr. Jane Smith (Gynaecologist)</p>
+        <p>Doctor 3: Dr. Diana Joseph (Orthodontics)</p>
+        <h2>Renowned Doctors</h2>
+        <p>Here are some of our renowned doctors:</p>
+        <ul>
+            <li>Dr. Joseph Livingston - Specializes in cardiology with over 20 years of experience.</li>
+            <li>Dr. Jane Smith - A leading expert in gynaecology with numerous publications.</li>
+            <li>Dr. Diana Joseph - Renowned for her innovative approaches in orthodontics.</li>
+        </ul>
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to contact us at info@unthealthcenter.com</p>
+        <h2>Forms</h2>
+        <form>
+            <h3>Appointment Request</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button type="submit">Submit</button>
+        </form>
+        <form>
+            <h3>Feedback Form</h3>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" placeholder="Enter your feedback"></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </div>
+    <footer>
+        &copy; 2023 UNT Health Center
+    </footer>
 </body>
 </html>
